@@ -13,7 +13,10 @@ const menu_item__schema = mongoose.Schema({
     type: Number,
     require: true,
   },
+  catogery: {
+    type: String,
+    require: true,
+  },
 });
-
 const MenuItem = mongoose.model("MenuItem", menu_item__schema);
-export default MenuItem ;
+export default MenuItem;
