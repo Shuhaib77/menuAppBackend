@@ -9,10 +9,10 @@ const menu_schema = new mongoose.Schema({
     type: String,
     require: true,
   },
-  menuItems: {
+  menuItems: [{
     type: mongoose.Schema.ObjectId,
     ref: "MenuItem",
-  },
+  }],
 
 });
 

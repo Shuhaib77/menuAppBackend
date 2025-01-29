@@ -17,3 +17,13 @@ export const add_menu_sevice = async (name, description) => {
 
   return newMenu;
 };
+
+
+export const all_menu_service=async()=>{
+   const menus= await Menu.find({})
+   if(!menus){
+    throw new Error("menu is emptyy")
+   }
+   return menus
+
+}
